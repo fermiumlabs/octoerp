@@ -34,12 +34,19 @@ Go to Setup > Custom Script. Add a new custom script for Doctype "Supplier Quota
 Go to [Octopart API](https://octopart.com/api/dashboard) and register a new api key. It's a short, alphanumerical string.
 
 Go to the newly-installed Octo-ERP module > Setup. Insert your API key and save.
-You can use the supplier lookup to check the exact name of a supplier. For example, if you search "Tme" and look it up, it will return "TME", if you look up "mouser" it will return "Mouser".
+
+
+### Configure the suppliers
+
+You can use the supplier lookup to check the exact (Octopart) name of a supplier. For example, if you search "Tme" and look it up, it will return "TME", if you look up "mouser" it will return "Mouser".
 
 You can also check them [here](https://octopart.com/distributors).
 
+To configure the supplier, open your preferred supplier under: Buying > Supplier > My supplier.
+Inser the exact name of your supplier gathered before under "More Information" > "Octopart Seller Name". Then Save.
+
 ### Usage
-	
+
 The system will only look up items in a supplier quotation where the manufacturer's part number has been set.
 		
 There is a custom field in each supplier (under Additional Information) where you should plug in the supplier's Octopart Name (this may be different from the supplier name you have entered). 
