@@ -2,7 +2,14 @@
 
 App for using Octo-part to look up part pricing and availability
 
-To implement, add this to your custom script for 'Supplier Quotation':
+### Install
+
+Run the following commands to install:
+
+	bench get-app octoerp https://github.com/bcornwellmott/octoerp.git
+	bench --site myErpWebsite.com install-app octoerp
+	
+Go to Setup > Custom Script. Add a new custom script for Doctype "Supplier Quotation" with the following content:
 
 	frappe.ui.form.on("Supplier Quotation",{
 		refresh: function(frm) {
@@ -22,12 +29,20 @@ To implement, add this to your custom script for 'Supplier Quotation':
 		}
 	});
 	
+(It's also a good idea to add a comment with a link to this repository)
+
+Go to [Octopart API](https://octopart.com/api/dashboard) and register a new api key. It's a short, alphanumerical string.
+
+Go to the newly-installed Octo-ERP module > Setup. Insert your API key and save.
+You can use the supplier lookup to check the exact name of a supplier. For example, if you search "Tme" and look it up, it will return "TME", if you look up "mouser" it will return "Mouser".
+
+You can also check them [here](https://octopart.com/distributors).
+
+### Usage
+	
 The system will only look up items in a supplier quotation where the manufacturer's part number has been set.
 		
-You also need to set up your API key in Octo-ERP Settings. 
-There is a custom field in each supplier (under Additional Information) where you should plug 
-in the supplier's Octopart Name (this may be different from the supplier name you have entered). 
-You can look up the formatting of this name in the Settings field.
+There is a custom field in each supplier (under Additional Information) where you should plug in the supplier's Octopart Name (this may be different from the supplier name you have entered). 
 
 =
 #### License
