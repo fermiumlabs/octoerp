@@ -1,4 +1,4 @@
-## Octo-ERP
+# Octo-ERP
 
 App for using Octo-part to look up part pricing and availability
 
@@ -51,7 +51,6 @@ The system will only look up items in a supplier quotation where the manufacture
 		
 There is a custom field in each supplier (under Additional Information) where you should plug in the supplier's Octopart Name (this may be different from the supplier name you have entered). 
 
-=
 #### License
 
 MIT
