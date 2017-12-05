@@ -1,6 +1,6 @@
 # Octo-ERP
 
-App for using Octo-part to look up part pricing and availability
+App for using [Octopart](https://octopart.com/) to look up part pricing and availability automatically populating a Supplier Quotation in [Erpnext](https://erpnext.com/)
 
 ### Install
 
